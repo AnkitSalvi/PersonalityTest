@@ -7,10 +7,9 @@ export const fetchResults = (answers) => {
 
     let score = answers.reduce(function(acc, curr){
             acc=(acc+curr);
-            console.log("acc:", acc)
             return acc;
     }, 0)
 
-    console.log(Math.floor(score/answers.length));
+
     return (Math.floor(score/answers.length));
 }
